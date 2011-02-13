@@ -2,7 +2,7 @@
 /*
 Plugin Name: Facebook Comments Point (FCP)
 Plugin URI: http://99points.info/plugins/facebook_comments_point_wp_plugin/
-Version: 2.62
+Version: 1.0
 Description: Facebook Comments Point (FCP) is a comments plugin which adds facebook comments looks. Also Its functionality is AJAX based.
 Author: Zeeshan Rasool
 Author URI: http://99points.info/
