@@ -1,0 +1,312 @@
+#fcp-comments-wrap {
+	width:540px;
+	padding:0px;
+	margin:0px;
+}
+
+#fcp-comments-wrap .fcp-comments-box li.test{opacity:0;}
+
+#fcp-comments-wrap .fcp-comments-box li {
+	clear:both;
+	list-style-image:none;
+	list-style-position:outside;
+	list-style-type:none;
+	margin:2px 0px 0px 0px;
+} 
+
+#fcp-comments-wrap .fcp-comments-box li.fcp-navigations{
+	/* n*/
+	-moz-background-clip: padding;     /* Firefox 3.6 */
+	-webkit-background-clip: padding;  /* Safari 4? Chrome 6? */
+	background-clip: padding-box;      /* Firefox 4, Safari 5, Opera 10, IE 9 */
+	background: #750052;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	margin:0px;
+	padding:2px;
+	width:99.1%;	
+	/* n*/
+}
+
+#fcp-comments-wrap .fcp-comments-box li.fcp-admin-personal-comment .fcp-comments-body{
+	/* n*/
+	-moz-background-clip: padding;     /* Firefox 3.6 */
+	-webkit-background-clip: padding;  /* Safari 4? Chrome 6? */
+	background-clip: padding-box;      /* Firefox 4, Safari 5, Opera 10, IE 9 */
+	-webkit-border-radius: 20px;
+	-moz-border-radius: 20px;
+	border-radius: 20px;
+	background:#bb7ca6;
+	/* n*/
+}
+#fcp-comments-wrap .fcp-comments-box li.fcp-admin-personal-comment .fcp-comment-text {
+	color: #000;
+	font: 12px/18px "Lucida Grande", Lucida, "Lucida Grande Unicode", Verdana, sans-serif;
+	font-size:12px
+}
+
+
+#fcp-comments-wrap .fcp-comments-box li .fcp-comments-body {
+	
+	/* n*/
+	-moz-background-clip: padding;     /* Firefox 3.6 */
+	-webkit-background-clip: padding;  /* Safari 4? Chrome 6? */
+	background-clip: padding-box;      /* Firefox 4, Safari 5, Opera 10, IE 9 */
+	-webkit-border-radius: 20px;
+	-moz-border-radius: 20px;
+	padding:8px;
+	background:#bb7ca6;
+	/* n*/
+}
+
+#fcp-comments-wrap .fcp-comments-box .fcp-gravatar {
+	float:left;
+	padding:7px;
+}
+
+#fcp-comments-wrap .fcp-comments-box .fcp-gravatar img{
+	/*width:30px;*/
+}
+
+#fcp-comments-wrap .fcp-comments-box .fcp-comment-text {
+	
+	width:80%;
+	color: #000;
+	font: 12px/18px "Lucida Grande", Lucida, "Lucida Grande Unicode", Verdana, sans-serif;
+    direction: ltr;
+    font-size: 12px;
+    text-align: left;
+	overflow:hidden;
+	float:left;
+	padding:1px 4px 2px 4px;
+}
+
+#fcp-comments-wrap a:hover{ text-decoration:underline; color:#fff}
+#fcp-comments-wrap ul.fcp-comments-box a:hover{ text-decoration:underline; color:#fff}
+
+#fcp-comments-wrap .fcp-comments-box .fcp-comment-text a.fcp-comments-by-this-user img{
+	width:17px;
+	margin-top:4px;
+	float:right; 
+}
+
+#fcp-comments-wrap .fcp-comments-box .fcp-comment-text p, .fcp-comments-box .fcp-comment-text p{
+	padding:3px;
+	line-height:18px;
+	margin-bottom:5px;
+}
+
+#fcp-comments-wrap .fcp-comments-box .fcp-comment-text .fcp-user-name{
+	color: #fff;
+	float:left;
+	line-height:14px;
+	margin-bottom:8px;
+	margin-top:5px;
+	width:85%;
+	font-size:13px;
+	font-weight:bold;
+}
+
+#fcp-comments-wrap .fcp-comments-box .fcp-comment-text .fcp-user-name a{
+	color: #fff;
+	text-decoration:none;
+	font-size:13px;
+	font-weight:bold;
+}
+
+#fcp-comments-wrap .fcp-comments-box .fcp-comment-text .fcp-user-name a:hover{
+	text-decoration:underline
+}
+
+#fcp-comments-wrap .fcp-comments-box ul {
+	border:medium none;
+	margin:2px 0 0 0px;
+	padding:0px 0 0 10px;
+}
+
+#fcp-comments-wrap ul.fcp-comments-box {
+	border:medium none;
+	margin:0;
+	/*width:540px;*/
+	list-style-type:none;
+	overflow:hidden;
+	padding:0;
+}
+
+#fcp-comments-wrap .fcp-comments-box .fcp-actions .fcp-people-like{float:left; font-weight:normal; color:#fff; margin-top:1px;padding-left:4px; width:90px;}
+
+#fcp-comments-wrap .fcp-comments-box .fcp-actions .likeimg {margin-top:0px; margin-left:6px; margin-right:2px;float:left; width:20px}
+
+#fcp-comments-wrap .fcp-comment-text .fcp-actions a:hover{text-decoration: none;}
+
+#fcp-comments-wrap .fcp-comment-text .fcp-actions label{
+	font-size: 12px;
+	font-family: "lucida grande",tahoma,verdana,arial,sans-serif;
+}
+
+#fcp-comments-wrap .fcp-date, .fcp-actions {
+	color: #fff;
+	font-size: 11px;float:left;
+	font-family: "lucida grande",tahoma,verdana,arial,sans-serif;
+	margin:0px;
+}
+
+#fcp-comments-wrap .fcp-comments-box  .fcp-collapsed-box{
+	padding:6px 3px 7px 24px; 
+	margin-bottom:3px;
+	float:left;
+}
+
+#fcp-comments-wrap .fcp-comments-box  .fcp-liked-box{
+	padding:6px 3px 7px 24px; 
+	margin-bottom:3px;
+	float:left;
+}
+#fcp-comments-wrap .fcp-comments-box  .fcp-collapsed-box a,.fcp-liked-box a{
+	color: #fff;
+    cursor: pointer;
+	font-family: "lucida grande",tahoma,verdana,arial,sans-serif;
+    font-size: 12px;
+}
+
+#fcp-comments-wrap .fcp-comments-box .fcp-collapsed-box a:hover, #fcp-comments-wrap .fcp-comments-box .fcp-liked-box a:hover{color: #fff;}
+
+#fcp-comments-wrap .fcp-comments-box .fcp-date a, .fcp-actions a{
+	color: #fff;
+    cursor: pointer;
+	font-family: "lucida grande",tahoma,verdana,arial,sans-serif;
+    font-size: 12px;
+}
+
+#fcp-comments-wrap .fcp-comments-box  .fcp-actions a, #fcp-comments-wrap  .fcp-comments-box  .fcp-actions span{ float:left; margin-right:6px;}
+
+#fcp-comments-wrap .fcp-comments-box #fcp-loader{ 
+	background:url(img/loader.gif) center left no-repeat;
+	width:10%;float:left; 
+	height:40px;
+}
+
+#fcp-comments-wrap .fcp-comments-box  .fcp-sort-box-image{ float:right; margin-top:2px; margin-right:11px; width:40px;}
+
+#fcp-comments-wrap #fcpCommentForm input[type="text"] {
+	margin: 0 0 5px 15px; 
+	font-family:"lucida grande",tahoma,verdana,arial,sans-serif;
+	font-size:11px;
+}
+
+#fcp-comments-wrap #fcpCommentForm input {
+	width: 186px;
+	border-width: 0;
+	border-style: none;
+	height: 22px;
+	outline: 0;
+	color: #333;
+	font: 12px/18px "Lucida Grande", Lucida, Verdana, sans-serif;
+	padding: 5px 14px 0;
+	display: block;
+	margin-top: 5px;
+	margin-left:17px;
+}
+
+#fcp-comments-wrap #fcpCommentForm input:focus {
+	color: #333;
+}
+
+#fcp-comments-wrap #fcpCommentForm textarea {
+	border-width: 0;
+	border-style: none;
+	outline: 0;
+	color: #333;
+	font: 12px/18px "Lucida Grande", Lucida, Verdana, sans-serif;
+	padding: 10px 14px 3px;
+	overflow: auto;
+	margin-top: 5px;
+	margin-left:15px;
+	margin-bottom: 14px;
+}
+
+#fcp-comments-wrap #fcpCommentForm textarea:focus {
+	color: #333;
+}
+
+#fcp-comments-wrap #fcpCommentForm button {
+	margin-bottom: 18px;
+	margin-left: auto;
+	border-width: 0;
+	border-style: none;
+	display: block;
+	text-indent: -9999px;
+	cursor: pointer;
+	background-color: #2A2B2F;
+}
+
+#fcp-comments-wrap #fcpCommentForm button:hover {
+	
+}
+
+#fcp-comments-wrap #fcpCommentForm button:active {
+	background-position: 0 -54px;
+}
+
+/*sss*/
+#fcp-comments-wrap #fcpCommentForm{
+	
+	padding:8px;
+	text-align:left; 
+	margin-top:2px; 
+	margin-bottom:2px;
+	background:#750052;
+	/* n*/
+	-moz-background-clip: padding;     /* Firefox 3.6 */
+	-webkit-background-clip: padding;  /* Safari 4? Chrome 6? */
+	background-clip: padding-box;      /* Firefox 4, Safari 5, Opera 10, IE 9 */
+	-webkit-border-radius: 20px;
+	-moz-border-radius: 20px;
+	border-radius: 20px;
+	width:97%;
+	/* n*/
+}
+
+#fcp-comments-wrap #fcp-commment-form-div #fcpCommentForm label { width:150px; margin-left:15px;}
+
+#fcp-comments-wrap #fcpCommentForm .fcp-buttons{ 
+	font-weight:bold;
+	background-color:#fff;
+	font-size: 12px;
+	border:0px;
+	text-align:center;
+	height:29px;
+	float:left;
+	margin-bottom:3px;
+	font-family:"Helvetica Neue",Arial,Helvetica,"Nimbus Sans L",sans-serif;
+	color:#000;
+	cursor:pointer;
+	}
+	
+#fcp-comments-wrap #fcpCommentForm label{ width:70px;font-family:"Helvetica Neue",Arial,Helvetica,"Nimbus Sans L",sans-serif; font-size:12px;text-align:left}
+#fcp-comments-wrap #fcpCommentForm textarea{font-family:"lucida grande",tahoma,verdana,arial,sans-serif;font-size:13px; width:51%}
+
+#fcp-comments-wrap #fcp-commment-form-div a{
+	color: #fff;
+    cursor: pointer;
+	font-family: "lucida grande",tahoma,verdana,arial,sans-serif;
+    font-size: 12px;
+    text-decoration: none;
+}
+
+#fcp-comments-wrap #fcp-commment-form-div {
+	font-family: "lucida grande",tahoma,verdana,arial,sans-serif;color: #fff;
+    font-size: 12px;
+	margin-top:2px;
+	}
+
+#fcp-comments-wrap #fcp-commment-form-div .fcp-close-box{  display:none;}
+
+#fcp-comments-wrap #fcp-commment-form-div .fcp-close-box a{ display:block;color:#FFFFFF; background:url(img/close.jpg) top left no-repeat;width:14px; height:15px; text-decoration:none;}
+
+
+#fcp-comments-wrap ul.fcp-comments-box .fcp-comments-inner-container #fcp_paging a#fcp_next_rec{
+background-color: #750052; color:#FFFFFF; text-decoration:none;
+}
+
+#fcp-comments-wrap ul.fcp-comments-box .fcp-comments-inner-container #fcp_paging a#fcp_next_rec:hover{ background-color:#bb7ca6;}

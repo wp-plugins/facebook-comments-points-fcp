@@ -1,0 +1,40 @@
+/* CSS Document */
+#fcp-comments-wrap ul.fcp-comments-box .fcp-comments-inner-container #fcp_paging{
+
+}
+#fcp-comments-wrap ul.fcp-comments-box .fcp-comments-inner-container #fcp_paging a#fcp_next_rec{
+	display:block;  width:20%; padding:4px;
+	margin-right:5px;
+	text-align:center;
+	font-family: "lucida grande",tahoma,verdana,arial,sans-serif;
+	font-size:13px;
+	
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+}
+
+#fcp-comments-wrap #fcpCommentForm .fcp-buttons, .fcp-buttons:visited{ 
+-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	width:100px;
+	height:29px;
+}
+#fcp-comments-wrap .fcp-comments-box li {
+    clear: both;
+    list-style: none outside none;
+    margin: 2px 0 0;
+    padding: 0;
+}
+
+
+#fcp-comments-wrap #fcpCommentForm input {
+	border: 1px #666 solid;
+}
+#fcp-comments-wrap #fcpCommentForm textarea {
+	border: 1px #666 solid;
+}
+
+#fcp-comments-wrap .fcp-comments-box li.fadein{opacity:0;}
+#fcp-comments-wrap .fcp-comments-box li.drop_effect{ margin-top:16px;}
