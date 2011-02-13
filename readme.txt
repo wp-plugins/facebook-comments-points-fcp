@@ -16,6 +16,7 @@ Features:
 
 * Download, Upload and Activate
 * Fully control over customization of layout
+* Multiple pretty themes
 * Ajax based working
 * Easy to load comments with animation (fade In effects)
 * Share your comment on twitter
@@ -54,4 +55,5 @@ http://www.99points.info/   (Check out comment section of my blog)
 http://www.99points.info/plugins/facebook_comments_point_wp_plugin/
 
 == Donations ==
+Please donate here if you like this plugin. Thank you !
 http://goo.gl/FZrLH
