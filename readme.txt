@@ -42,6 +42,11 @@ http://www.99points.info/   (Check out comment section of my blog)
 1. It is now done. If you want to customize options, then go to, Settings > Facebook Comments Point (FCP)
 
 
+== Change log ==
+
+* There were some path issues with FCP. But now those are fixed.
+
+
 == Frequently Asked Questions ==
 *It gave error when I actiavted it?
 
