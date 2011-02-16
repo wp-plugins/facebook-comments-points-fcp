@@ -37,7 +37,7 @@ http://www.99points.info/   (Check out comment section of my blog)
 
 
 == Installation ==
-1. Upload `facebook_comments_point` folder to the `/wp-content/plugins/` directory
+1. Upload `facebook-comments-points-fcp` folder to the `/wp-content/plugins/` directory
 1. Activate the plugin 'Facebook Comments Point (FCP)' on 'Plugins' menu in WordPress
 1. It is now done. If you want to customize options, then go to, Settings > Facebook Comments Point (FCP)
 

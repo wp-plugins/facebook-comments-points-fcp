@@ -163,9 +163,9 @@ function fcp_comments(&$c, $deep_id = -1, $color = true)
 				}
 				?>
 				
-				<img src='<?php echo bloginfo('siteurl')?>/wp-content/plugins/facebook_comments_point/img/loader.gif' class="fcp-comment-loader-<?php echo $c->comment_ID?>" style="margin-top:8px; margin-left:6px;float:left; display:none" alt='' />
+				<img src='<?php echo bloginfo('siteurl')?>/wp-content/plugins/facebook-comments-points-fcp/img/loader.gif' class="fcp-comment-loader-<?php echo $c->comment_ID?>" style="margin-top:8px; margin-left:6px;float:left; display:none" alt='' />
 				
-				<img src='<?php echo bloginfo('siteurl')?>/wp-content/plugins/facebook_comments_point/img/<?php echo $theme_like_ico?>' class="likeimg" alt='' />
+				<img src='<?php echo bloginfo('siteurl')?>/wp-content/plugins/facebook-comments-points-fcp/img/<?php echo $theme_like_ico?>' class="likeimg" alt='' />
 				
 				<?php
 				echo '<label style="float:left; margin-top:1px;" class="fcp-likes-stat-'.$c->comment_ID.'">'.$c->fcp_likes_count.'</label>
@@ -176,18 +176,18 @@ function fcp_comments(&$c, $deep_id = -1, $color = true)
 				if(@$fcp_show_user_post_ico && @$show_user_post_ico){?>
 				<label style="float:left;">
 				<a href="javascript:fcpUserCom(<?php echo $c->comment_ID?>,<?php echo $sav_id?>)" style="float:left; width:26px; display:block;" id="fcp-user-comm-logo-<?php echo $c->comment_ID?>" class="fcp-comments-by-this-user" title="<?php echo $fcp_language_by_this_user?>">
-				<img src="<?php echo bloginfo('siteurl')?>/wp-content/plugins/facebook_comments_point/img/fcp-user.png" alt="" border="0" />
+				<img src="<?php echo bloginfo('siteurl')?>/wp-content/plugins/facebook-comments-points-fcp/img/fcp-user.png" alt="" border="0" />
 				</a>
 				</label>
 				<?php
 				}?>
-				<img src='<?php echo bloginfo('siteurl')?>/wp-content/plugins/facebook_comments_point/img/loader.gif' class="fcp-this-user-loader<?php echo $c->comment_ID?>" style="margin-top:8px;float:left; display:none" alt='' />
+				<img src='<?php echo bloginfo('siteurl')?>/wp-content/plugins/facebook-comments-points-fcp/img/loader.gif' class="fcp-this-user-loader<?php echo $c->comment_ID?>" style="margin-top:8px;float:left; display:none" alt='' />
 				
 				<?php
 				if(@$fcp_show_twitter_ico){?>
 				<label style="float:left;">
 				<a href="http://twitter.com/home?status=reading comments on <?php echo get_permalink( $sav_id ); ?> " style="float:left; width:26px; margin-left:3px;display:block; margin-top:1px" title="<?php echo $fcp_language_tweet_this?>">
-				<img src="<?php echo bloginfo('siteurl')?>/wp-content/plugins/facebook_comments_point/img/tw.png" alt="" border="0" />
+				<img src="<?php echo bloginfo('siteurl')?>/wp-content/plugins/facebook-comments-points-fcp/img/tw.png" alt="" border="0" />
 				</a>
 				</label>
 				<?php
@@ -259,7 +259,7 @@ function fcp_comments(&$c, $deep_id = -1, $color = true)
 	<div class="fcp-paging-wrap-<?php echo $t_showing_r?>" style="display:none">
 		<br clear="all" />
 		<div id="fcp_paging" align="right">
-			<img src='<?php echo bloginfo('siteurl')?>/wp-content/plugins/facebook_comments_point/img/loader.gif' class="fcp-paging-loader" style="margin-top:15px;display:none " alt='' />
+			<img src='<?php echo bloginfo('siteurl')?>/wp-content/plugins/facebook-comments-points-fcp/img/loader.gif' class="fcp-paging-loader" style="margin-top:15px;display:none " alt='' />
 			<input type="hidden" name="fcp_paging_id" id="fcp_paging_id" value="<?php echo $t_showing_r?>" />
 			<input type="hidden" name="fcp_paging_pid" id="fcp_paging_pid" value="<?php echo $pid?>" />
 			<a href="javascript:void(0)" id="fcp_next_rec"><< <?php echo $fcp_language_more_records?></a>

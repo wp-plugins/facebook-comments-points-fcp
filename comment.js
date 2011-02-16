@@ -11,7 +11,7 @@ jQuery(document).ready(function(){
 		changeFormPosition(0);
 		
 		var puid =  $j(this).parent().attr('id').replace('collapsed-','');	
-		$j.post( blogurl+"/wp-content/plugins/facebook_comments_point/fcp_ajax_fetching.php?id="+puid+"&type=all", {
+		$j.post( blogurl+"/wp-content/plugins/facebook-comments-points-fcp/fcp_ajax_fetching.php?id="+puid+"&type=all", {
 	
 			}, function(response){
 				
@@ -30,7 +30,7 @@ jQuery(document).ready(function(){
 		changeFormPosition(0);
 		
 		var puid =  $j(this).parent().attr('id').replace('liked-','');	
-		$j.post( blogurl+"/wp-content/plugins/facebook_comments_point/fcp_ajax_fetching.php?id="+puid+"&type=liked", {
+		$j.post( blogurl+"/wp-content/plugins/facebook-comments-points-fcp/fcp_ajax_fetching.php?id="+puid+"&type=liked", {
 	
 			}, function(response){
 				
@@ -46,7 +46,7 @@ jQuery(document).ready(function(){
 		changeFormPosition(0);
 				
 		var puid =  $j(this).parent().attr('id').replace('recent-','');	
-		$j.post( blogurl+"/wp-content/plugins/facebook_comments_point/fcp_ajax_fetching.php?id="+puid+"&type=recent", {
+		$j.post( blogurl+"/wp-content/plugins/facebook-comments-points-fcp/fcp_ajax_fetching.php?id="+puid+"&type=recent", {
 	
 			}, function(response){
 				
@@ -97,7 +97,7 @@ jQuery(document).ready(function(){
 	
 			type: 'post',
 	
-			url:  blogurl+"/wp-content/plugins/facebook_comments_point/fcp_submit_ajax_comments.php",
+			url:  blogurl+"/wp-content/plugins/facebook-comments-points-fcp/fcp_submit_ajax_comments.php",
 	
 			data: $j('#fcpCommentForm').serialize(),
 	
@@ -139,7 +139,7 @@ function fCpLike(comment_ID)
 	$j('.fcp-like-click-'+comment_ID).hide();
 	$j('.fcp-comment-loader-'+comment_ID).show();
 	
-	$j.post( blogurl+"/wp-content/plugins/facebook_comments_point/fcp_ajax_like.php?id="+comment_ID+"&type=like", {
+	$j.post( blogurl+"/wp-content/plugins/facebook-comments-points-fcp/fcp_ajax_like.php?id="+comment_ID+"&type=like", {
 	
 	}, function(response){
 		
@@ -156,7 +156,7 @@ function fCpUnLike(comment_ID)
 	$j('.fcp-unlike-click-'+comment_ID).hide();
 	$j('.fcp-comment-loader-'+comment_ID).show();
 	
-	$j.post( blogurl+"/wp-content/plugins/facebook_comments_point/fcp_ajax_like.php?id="+comment_ID+"&type=unlike", {
+	$j.post( blogurl+"/wp-content/plugins/facebook-comments-points-fcp/fcp_ajax_like.php?id="+comment_ID+"&type=unlike", {
 	
 	}, function(response){
 		
@@ -175,7 +175,7 @@ function fcpUserCom (comment_ID,Pid)
 	
 	changeFormPosition(0);
 	
-	$j.post( blogurl+"/wp-content/plugins/facebook_comments_point/fcp_ajax_fetching.php?id="+comment_ID+"&type=userpost&pid="+Pid, {
+	$j.post( blogurl+"/wp-content/plugins/facebook-comments-points-fcp/fcp_ajax_fetching.php?id="+comment_ID+"&type=userpost&pid="+Pid, {
 
 		}, function(response){
 			
@@ -212,7 +212,7 @@ $j('a#fcp_next_rec').livequery('click', function(){
 	$j('.fcp-paging-loader').show();
 	changeFormPosition(0);
 	
-	$j.post( blogurl+"/wp-content/plugins/facebook_comments_point/fcp_ajax_fetching.php?id="+pid+"&type=paging&next="+next, {
+	$j.post( blogurl+"/wp-content/plugins/facebook-comments-points-fcp/fcp_ajax_fetching.php?id="+pid+"&type=paging&next="+next, {
 
 		}, function(response){
 			

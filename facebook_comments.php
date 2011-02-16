@@ -167,13 +167,14 @@ function fcp_script()
 		if(!$css)$css = "comment.css";
 	}
 	
-	echo '<link rel="stylesheet" href="'.get_settings('siteurl').'/wp-content/plugins/facebook_comments_point/'.$css.'" type="text/css" media="screen" />';
-	echo '<link rel="stylesheet" href="'.get_settings('siteurl').'/wp-content/plugins/facebook_comments_point/common.css" type="text/css" media="screen" />';
-	echo '<script type="text/javascript" src="'.get_settings('siteurl').'/wp-content/plugins/facebook_comments_point/jquery-1.2.6.min.js"></script>';
+	echo '<link rel="stylesheet" href="'.get_settings('siteurl').'/wp-content/plugins/facebook-comments-points-fcp/'.$css.'" type="text/css" media="screen" />';
+	echo '<link rel="stylesheet" href="'.get_settings('siteurl').'/wp-content/plugins/facebook-comments-points-fcp/common.css" type="text/css" media="screen" />';
+	echo '<script type="text/javascript" src="'.get_settings('siteurl').'/wp-content/plugins/facebook-comments-points-fcp/jquery-1.2.6.min.js"></script>';
 	
-	echo '<script type="text/javascript" src="'.get_settings('siteurl').'/wp-content/plugins/facebook_comments_point/jquery.livequery.js"></script>';
+	echo '<script type="text/javascript" src="'.get_settings('siteurl').'/wp-content/plugins/facebook-comments-points-fcp/jquery.livequery.js"></script>';
 	
-	echo '<script type="text/javascript" src="'.get_settings('siteurl').'/wp-content/plugins/facebook_comments_point/comment.js"></script>';
+	echo '<script type="text/javascript" src="'.get_settings('siteurl').'/wp-content/plugins/facebook-comments-points-fcp/comment.js"></script>';
+	
 	echo '<script type="text/javascript">var blogurl="'.get_settings("siteurl").'";</script>'; 
 }
 
@@ -187,7 +188,7 @@ function fcp_insert_reply_id($id)
 
 function change_comments_template($file) 
 {
-	return ABSPATH . "/wp-content/plugins/facebook_comments_point/fcp_comments_temp.php";
+	return ABSPATH . "/wp-content/plugins/facebook-comments-points-fcp/fcp_comments_temp.php";
 }
 
 /////////////
@@ -397,12 +398,12 @@ function fcp_admin_options()
 							<div style="float:left">
 							 <input name="fcp_show_twitter_ico" type="checkbox"<?php if(get_option('fcp_show_twitter_ico')=='1') echo 'checked="checked"'; ?> value="1" /> &nbsp;&nbsp;Show twitter share icon.</div>
 							
-							<img src='<?php echo bloginfo('siteurl')?>/wp-content/plugins/facebook_comments_point/img/tw.png' style="margin-top:1px; margin-left:6px;float:left;" alt='' />
+							<img src='<?php echo bloginfo('siteurl')?>/wp-content/plugins/facebook-comments-points-fcp/img/tw.png' style="margin-top:1px; margin-left:6px;float:left;" alt='' />
 							<br clear="all" />
 							<div style="float:left">
 							 <input name="fcp_show_user_post_ico" type="checkbox"<?php if(get_option('fcp_show_user_post_ico')=='1') echo 'checked="checked"'; ?> value="1" /> &nbsp;&nbsp;Show User All Comments share icon.</div>
 							
-							<img src='<?php echo bloginfo('siteurl')?>/wp-content/plugins/facebook_comments_point/img/fcp-user.png' style="margin-top:1px; width:20px; margin-left:6px;float:left;" alt='' />						</td>
+							<img src='<?php echo bloginfo('siteurl')?>/wp-content/plugins/facebook-comments-points-fcp/img/fcp-user.png' style="margin-top:1px; width:20px; margin-left:6px;float:left;" alt='' />						</td>
 					</tr>
 					
 					
@@ -461,14 +462,14 @@ function fcp_admin_options()
 							<label>
 							 <input name="fcp_theme" type="radio" value="1" <?php checked('1', $fcp_theme_form); ?> />
 							 &nbsp;&nbsp;<label style="padding-top:12px;">Theme 1 <code>Default</code></label>	
-							 <img src="<?php echo bloginfo('siteurl')?>/wp-content/plugins/facebook_comments_point/themes-img/theme8.jpg" width="160" alt="" />	
+							 <img src="<?php echo bloginfo('siteurl')?>/wp-content/plugins/facebook-comments-points-fcp/themes-img/theme8.jpg" width="160" alt="" />	
 							 </label>	    
 					    </td>
 						<td width="181">
 							<label>
 							 <input name="fcp_theme" type="radio" value="2" <?php checked('2', $fcp_theme_form); ?> />
 							 &nbsp;&nbsp;<label style="padding-top:12px;">Theme 2</label>	
-							 <img src="<?php echo bloginfo('siteurl')?>/wp-content/plugins/facebook_comments_point/themes-img/theme1.jpg" width="160" alt="" />	
+							 <img src="<?php echo bloginfo('siteurl')?>/wp-content/plugins/facebook-comments-points-fcp/themes-img/theme1.jpg" width="160" alt="" />	
 							 </label>	
 						</td>
 						
@@ -481,14 +482,14 @@ function fcp_admin_options()
 							<label>
 							 <input name="fcp_theme" type="radio" value="3" <?php checked('3', $fcp_theme_form); ?> />
 							 &nbsp;&nbsp;<label style="padding-top:12px;">Theme 3</label>	
-							 <img src="<?php echo bloginfo('siteurl')?>/wp-content/plugins/facebook_comments_point/themes-img/theme2.jpg" width="160" alt="" />	
+							 <img src="<?php echo bloginfo('siteurl')?>/wp-content/plugins/facebook-comments-points-fcp/themes-img/theme2.jpg" width="160" alt="" />	
 							 </label>	    
 					    </td>
 						<td width="181">
 							<label>
 							 <input name="fcp_theme" type="radio" value="4" <?php checked('4', $fcp_theme_form); ?> />
 							 &nbsp;&nbsp;<label style="padding-top:12px;">Theme 4</label>	
-							 <img src="<?php echo bloginfo('siteurl')?>/wp-content/plugins/facebook_comments_point/themes-img/theme3.jpg" width="160" alt="" />	
+							 <img src="<?php echo bloginfo('siteurl')?>/wp-content/plugins/facebook-comments-points-fcp/themes-img/theme3.jpg" width="160" alt="" />	
 							 </label>	
 						</td>
 						
@@ -502,14 +503,14 @@ function fcp_admin_options()
 							<label>
 							 <input name="fcp_theme" type="radio" value="5" <?php checked('5', $fcp_theme_form); ?> />
 							 &nbsp;&nbsp;<label style="padding-top:12px;">Theme 5</label>	
-							 <img src="<?php echo bloginfo('siteurl')?>/wp-content/plugins/facebook_comments_point/themes-img/theme4.jpg" width="160" alt="" />	
+							 <img src="<?php echo bloginfo('siteurl')?>/wp-content/plugins/facebook-comments-points-fcp/themes-img/theme4.jpg" width="160" alt="" />	
 							 </label>	    
 					    </td>
 						<td width="181">
 							<label>
 							 <input name="fcp_theme" type="radio" value="6" <?php checked('6', $fcp_theme_form); ?> />
 							 &nbsp;&nbsp;<label style="padding-top:12px;">Theme 6</label>	
-							 <img src="<?php echo bloginfo('siteurl')?>/wp-content/plugins/facebook_comments_point/themes-img/theme5.jpg" width="160" alt="" />	
+							 <img src="<?php echo bloginfo('siteurl')?>/wp-content/plugins/facebook-comments-points-fcp/themes-img/theme5.jpg" width="160" alt="" />	
 							 </label>	
 						</td>
 						
@@ -522,14 +523,14 @@ function fcp_admin_options()
 							<label>
 							 <input name="fcp_theme" type="radio" value="7" <?php checked('7', $fcp_theme_form); ?> />
 							 &nbsp;&nbsp;<label style="padding-top:12px;">Theme 7</label>	
-							 <img src="<?php echo bloginfo('siteurl')?>/wp-content/plugins/facebook_comments_point/themes-img/theme6.jpg" width="160" alt="" />	
+							 <img src="<?php echo bloginfo('siteurl')?>/wp-content/plugins/facebook-comments-points-fcp/themes-img/theme6.jpg" width="160" alt="" />	
 							 </label>	    
 					    </td>
 						<td width="181">
 							<label>
 							 <input name="fcp_theme" type="radio" value="8" <?php checked('8', $fcp_theme_form); ?> />
 							 &nbsp;&nbsp;<label style="padding-top:12px;">Theme 8</label>	
-							 <img src="<?php echo bloginfo('siteurl')?>/wp-content/plugins/facebook_comments_point/themes-img/theme7.jpg" width="160" alt="" />	
+							 <img src="<?php echo bloginfo('siteurl')?>/wp-content/plugins/facebook-comments-points-fcp/themes-img/theme7.jpg" width="160" alt="" />	
 							 </label>	
 						</td>
 						

@@ -184,9 +184,9 @@ foreach ($comments as $c)
 				echo '<a href="javascript:fCpUnLike('.$c->comment_ID.')" class="fcp-unlike-click-'.$c->comment_ID.'" title="'.$fcp_language_unlike.'">'.$fcp_language_unlike.'</a>';
 			}
 			?>
-			<img src='<?php echo bloginfo('siteurl')?>/wp-content/plugins/facebook_comments_point/img/loader.gif' class="fcp-comment-loader-<?php echo $c->comment_ID?>" style="margin-top:8px; margin-left:6px;float:left; display:none" alt='' />
+			<img src='<?php echo bloginfo('siteurl')?>/wp-content/plugins/facebook-comments-points-fcp/img/loader.gif' class="fcp-comment-loader-<?php echo $c->comment_ID?>" style="margin-top:8px; margin-left:6px;float:left; display:none" alt='' />
 			
-				<img src='<?php echo bloginfo('siteurl')?>/wp-content/plugins/facebook_comments_point/img/<?php echo $theme_like_ico?>' class="likeimg" alt='' />
+				<img src='<?php echo bloginfo('siteurl')?>/wp-content/plugins/facebook-comments-points-fcp/img/<?php echo $theme_like_ico?>' class="likeimg" alt='' />
 				
 				<?php
 				echo '<label style="float:left; margin-top:1px;" class="fcp-likes-stat-'.$c->comment_ID.'">'.$c->fcp_likes_count.'</label> <label class="fcp-people-like">'.$fcp_language_people.'</label>';?>
@@ -195,18 +195,18 @@ foreach ($comments as $c)
 				if(@$fcp_show_user_post_ico){?>
 				<label style="float:left;">
 				<a href="javascript:fcpUserCom(<?php echo $c->comment_ID?>,<?php echo $id?>)" style="float:left; width:30px; display:block;" id="fcp-user-comm-logo-<?php echo $c->comment_ID?>" class="fcp-comments-by-this-user" title="<?php echo $fcp_language_by_this_user?>">
-				<img src="<?php echo bloginfo('siteurl')?>/wp-content/plugins/facebook_comments_point/img/fcp-user.png" alt="" border="0" />
+				<img src="<?php echo bloginfo('siteurl')?>/wp-content/plugins/facebook-comments-points-fcp/img/fcp-user.png" alt="" border="0" />
 				</a>
 				</label>
 				<?php
 				}?>
-				<img src='<?php echo bloginfo('siteurl')?>/wp-content/plugins/facebook_comments_point/img/loader.gif' class="fcp-this-user-loader<?php echo $c->comment_ID?>" style="margin-top:8px;float:left; display:none" alt='' />
+				<img src='<?php echo bloginfo('siteurl')?>/wp-content/plugins/facebook-comments-points-fcp/img/loader.gif' class="fcp-this-user-loader<?php echo $c->comment_ID?>" style="margin-top:8px;float:left; display:none" alt='' />
 				
 				<?php
 				if(@$fcp_show_twitter_ico){?>
 				<label style="float:left;">
 				<a href="http://twitter.com/home?status=reading comments on <?php echo get_permalink( $id ); ?> " style="float:left; width:30px; margin-left:3px;display:block; margin-top:1px" title="<?php echo $fcp_language_tweet_this?>">
-				<img src="<?php echo bloginfo('siteurl')?>/wp-content/plugins/facebook_comments_point/img/tw.png" alt="" border="0" />
+				<img src="<?php echo bloginfo('siteurl')?>/wp-content/plugins/facebook-comments-points-fcp/img/tw.png" alt="" border="0" />
 				</a>
 				</label>
 				<?php
