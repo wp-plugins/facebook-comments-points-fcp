@@ -29,7 +29,7 @@ Features:
 
 Note:
 ====
-This plugin can produce conflict with some other AJAX comments plugin. You should deactivate others to test this amazing plugin.
+There were some path issues with FCP but now its fixed. This plugin can produce conflict with some other AJAX comments plugin. You should deactivate others to test this amazing plugin.
 
 Demo:
 ====
